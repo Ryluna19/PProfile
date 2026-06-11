@@ -28,7 +28,7 @@ Página pessoal desenvolvida com HTML, CSS e JavaScript, baseada em um projeto e
 
 
 <p align="center">
-  <img alt="Profile Teste" src=".github/Preview.jpg" width="100%">
+  <img width="944" height="936" alt="Preview" src="https://github.com/user-attachments/assets/afe7f97f-e047-41ee-b9d9-c738840b4906" />
 </p>
 
 ## 🚀 Tecnologias
