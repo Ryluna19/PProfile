@@ -1,145 +1,298 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
 :root {
-  --text-color: white;
-  --bg-url: url(assets/bg-mobile.jpg);
-  --stroke-color: rgba(255, 255, 255, 0.5);
-  --surface-color: rgba(255, 255, 255, 0.05)
-  --surface-color-hover: rgba(0,0,0,0.02);
-  --highlight-color: rgba(255, 255, 255, 0.2);
+  --text-color: #ffffff;
+  --muted-color: #cbd5e1;
+  --bg-color: #0f0f0f;
+  --card-color: rgba(255, 255, 255, 0.06);
+  --card-hover: rgba(255, 255, 255, 0.1);
+  --stroke-color: rgba(255, 255, 255, 0.14);
+  --highlight-color: rgba(255, 122, 0, 0.18);
+  --accent-color: #ff7a00;
+  --accent-hover: #ff9a2f;
   --switch-bg-url: url(assets/moon-stars.svg);
 }
 
 .light {
-  --text-color: black;
-  --bg-url: url(assets/bg-mobile-light.jpg);
-  --stroke-color: rgba(0,0,0,0.5);
-  --surface-color: rgba(0,0,0,0.05);
-  --surface-color-hover: rgba(0, 0, 0, 0.02);
-  --highlight-color: rgba(0, 0, 0, 0.1);
+  --text-color: #111827;
+  --muted-color: #4b5563;
+  --bg-color: #f8fafc;
+  --card-color: rgba(0, 0, 0, 0.04);
+  --card-hover: rgba(0, 0, 0, 0.08);
+  --stroke-color: rgba(0, 0, 0, 0.12);
+  --highlight-color: rgba(255, 122, 0, 0.16);
   --switch-bg-url: url(assets/sun.svg);
 }
 
 body {
-  background: var(--bg-url) no-repeat top center/cover;
-  height: 100vh;
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at top, rgba(255, 122, 0, 0.18), transparent 34%),
+    var(--bg-color);
 }
+
 body * {
-  font-family: 'Inter', sans-serif;
-  color:var(--text-color);
+  font-family: "Inter", sans-serif;
+  color: var(--text-color);
 }
 
 #container {
   width: 100%;
-  max-width: 588px;
-  margin: 56px auto  0px;
-  padding: 0 24px;
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 48px 24px 32px;
 }
- /* Profile */
+
+/* Profile */
+
 #profile {
- text-align: center;
- padding: 24px;
+  text-align: center;
+  padding: 24px 0 18px;
 }
 
-#profile img{
+#profile img {
   width: 112px;
+  height: 112px;
+  object-fit: cover;
+  border: 3px solid var(--accent-color);
+  border-radius: 50%;
+  margin-bottom: 18px;
 }
 
-#profile p {
-  font-weight: 500;
-  line-height: 24px;
-  margin-top: 8px;
+.eyebrow {
+  color: var(--accent-color);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  margin-bottom: 10px;
 }
-/* Swtich */
-#switch{
+
+#profile h1 {
+  font-size: 2.2rem;
+  line-height: 1.1;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  color: var(--text-color);
+  font-size: 1.05rem;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.description {
+  max-width: 620px;
+  margin: 0 auto;
+  color: var(--muted-color);
+  font-size: 0.98rem;
+  line-height: 1.6;
+}
+
+/* Switch */
+
+#switch {
   position: relative;
   width: 64px;
-  margin: 4px auto;
+  margin: 18px auto 32px;
 }
 
-#switch button{
+#switch button {
   width: 32px;
   height: 32px;
-  background: white var(--switch-bg-url) no-repeat center;
+
+  background: #ffffff var(--switch-bg-url) no-repeat center;
   border: 0;
   border-radius: 50%;
+
   position: absolute;
   top: 50%;
   left: 0;
   z-index: 1;
-  transform:translateY(-50%);
 
-  animation: slide-out 0.2s ;
+  transform: translateY(-50%);
+  cursor: pointer;
+
+  animation: slide-out 0.2s;
 }
-.light #switch button{
+
+.light #switch button {
   animation: slide-in 0.3s forwards;
 }
 
-#switch button:hover{
- outline: 8px solid var(--highlight-color);
+#switch button:hover {
+  outline: 8px solid var(--highlight-color);
 }
 
-#switch span{
+#switch span {
   display: block;
   width: 64px;
   height: 24px;
-  background: var(--surface-color);
-  border:1px solid var(--stroke-color);
+
+  background: var(--card-color);
+  border: 1px solid var(--stroke-color);
+  border-radius: 9999px;
+
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
-  border-radius: 9999px;
 }
 
+/* Sections */
 
-/* Links */ 
+section {
+  margin-bottom: 28px;
+}
 
-ul{
+section h2 {
+  font-size: 1rem;
+  color: var(--accent-color);
+  margin-bottom: 14px;
+}
+
+/* Main Links */
+
+.main-links {
   list-style: none;
 
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-  padding: 24px 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
 }
 
-ul li a {
-  border: 1px solid red;
+.main-links li a {
+  min-height: 58px;
 
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 10px;
 
-  padding: 16px 24px;
+  padding: 14px 18px;
 
-  background: var(--surface-color);
+  background: var(--card-color);
   border: 1px solid var(--stroke-color);
-  border-radius: 8px;
-
-  backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px);
+  border-radius: 14px;
 
   text-decoration: none;
-  font-weight: 500;
+  font-weight: 700;
 
-  transition: background 0.3s;
+  transition: 0.2s ease;
 }
 
-/* pseudo-selector */
-ul li a:hover {
-  background: var(--surface-color-hover);
-  border: 1.5px solid white;
+.main-links li a:hover {
+  background: var(--card-hover);
+  border-color: var(--accent-color);
+  transform: translateY(-3px);
 }
 
-/*#social-links */
-#social-links{
+.main-links ion-icon {
+  font-size: 1.25rem;
+  color: var(--accent-color);
+}
+
+/* Projects */
+
+.projects-section {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.project-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+
+  padding: 20px;
+
+  background: var(--card-color);
+  border: 1px solid var(--stroke-color);
+  border-radius: 18px;
+
+  transition: 0.2s ease;
+}
+
+.project-card:hover {
+  background: var(--card-hover);
+  border-color: rgba(255, 122, 0, 0.5);
+  transform: translateY(-3px);
+}
+
+.project-card h3 {
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+}
+
+.project-card p {
+  color: var(--muted-color);
+  font-size: 0.92rem;
+  line-height: 1.5;
+  margin-bottom: 12px;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.tags span,
+.skills span {
+  display: inline-flex;
+
+  padding: 6px 10px;
+
+  background: rgba(255, 122, 0, 0.12);
+  border: 1px solid rgba(255, 122, 0, 0.25);
+  border-radius: 999px;
+
+  color: var(--accent-hover);
+  font-size: 0.78rem;
+  font-weight: 700;
+}
+
+.project-link {
+  flex-shrink: 0;
+
+  padding: 10px 14px;
+
+  background: var(--accent-color);
+  border-radius: 10px;
+
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 700;
+
+  transition: 0.2s ease;
+}
+
+.project-link:hover {
+  background: var(--accent-hover);
+  transform: translateY(-2px);
+}
+
+/* Skills */
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+/* Social Links */
+
+#social-links {
   display: flex;
   justify-content: center;
+  gap: 8px;
 
-  padding: 5px 0;
+  padding: 8px 0 18px;
 
   font-size: 24px;
 }
@@ -148,47 +301,81 @@ ul li a:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 16px;
-  transition: background 0.2s;
+
+  padding: 14px;
+
   border-radius: 50%;
+
+  transition: 0.2s ease;
 }
 
-#social-links a:hover{
+#social-links a:hover {
   background: var(--highlight-color);
+  transform: translateY(-3px);
 }
 
-footer{
-  padding: 24px 0;
+#social-links ion-icon {
+  color: var(--accent-color);
+}
+
+/* Footer */
+
+footer {
+  max-width: 620px;
+  margin: 0 auto;
+
+  padding: 18px 0;
+
+  color: var(--muted-color);
   text-align: center;
-  font-size: 14px;
+  font-size: 0.85rem;
+  line-height: 1.5;
 }
 
-/* media queries */
-@media (min-width: 700px){
-  :root{
-    --bg-url: url(assets/bg-desktop.jpg)
+/* Mobile */
+
+@media (max-width: 720px) {
+  #container {
+    padding: 32px 18px 24px;
   }
-  .light{
-    --bg-url: url(assets/bg-desktop-light.jpg)
+
+  #profile h1 {
+    font-size: 1.9rem;
+  }
+
+  .main-links {
+    grid-template-columns: 1fr;
+  }
+
+  .project-card {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .project-link {
+    width: 100%;
+    text-align: center;
   }
 }
 
 /* Animations */
 
- @keyframes slide-in{
+@keyframes slide-in {
   from {
     left: 0;
   }
+
   to {
     left: 50%;
   }
- }
+}
 
- @keyframes slide-out{
-  from { 
+@keyframes slide-out {
+  from {
     left: 50%;
   }
-  to{
+
+  to {
     left: 0;
   }
- }
+}

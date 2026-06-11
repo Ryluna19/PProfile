@@ -1,71 +1,204 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
   <head>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
+
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Projeto Devlinks</title>
+
+    <title>Ryan Santos | Desenvolvedor Web</title>
+
     <link rel="stylesheet" href="style.css" />
   </head>
+
   <body>
-    <div id="container">
-      <div id="profile">
-        <img src="assets/avatar.png" alt="Foto de Ryan Santos, Perfil" />
-        <p>@ryanbulhoes_</p>
-      </div>
+    <main id="container">
+      <section id="profile">
+        <img src="assets/avatar.png" alt="Foto de Ryan Santos" />
+
+        <p class="eyebrow">Portfólio pessoal</p>
+
+        <h1>Ryan Santos</h1>
+
+        <p class="subtitle">
+          Desenvolvedor Web | React | Node.js | PostgreSQL | Python/Flask
+        </p>
+
+        <p class="description">
+          Estudante de Análise de Sistemas de Computação, buscando oportunidades
+          de estágio ou posição júnior em desenvolvimento web.
+        </p>
+      </section>
+
       <div id="switch" onclick="toggleMode()">
-        <button>
-        </button>
+        <button aria-label="Alterar tema"></button>
         <span></span>
       </div>
-      <ul>
-        <li>
+
+      <section class="links-section">
+        <h2>Links profissionais</h2>
+
+        <ul class="main-links">
+          <li>
+            <a
+              href="https://www.linkedin.com/in/ryan-bulhoes-santos-560b25225/"
+              target="_blank"
+            >
+              <ion-icon name="logo-linkedin"></ion-icon>
+              LinkedIn
+            </a>
+          </li>
+
+          <li>
+            <a href="https://github.com/Ryluna19" target="_blank">
+              <ion-icon name="logo-github"></ion-icon>
+              GitHub
+            </a>
+          </li>
+
+          <li>
+            <a href="mailto:ryan.bulhoes@gmail.com">
+              <ion-icon name="mail-outline"></ion-icon>
+              Email
+            </a>
+          </li>
+        </ul>
+      </section>
+
+      <section class="projects-section">
+        <h2>Projetos em destaque</h2>
+
+        <div class="project-card">
+          <div>
+            <h3>Job Application Tracker</h3>
+            <p>
+              Aplicação full-stack para gerenciar candidaturas de emprego, com
+              autenticação JWT, dashboard, CRUD, filtros e busca.
+            </p>
+
+            <div class="tags">
+              <span>React</span>
+              <span>Node.js</span>
+              <span>PostgreSQL</span>
+              <span>JWT</span>
+            </div>
+          </div>
+
           <a
-            href="https://www.linkedin.com/in/ryan-bulhoes-santos-560b25225/"
+            href="https://github.com/Ryluna19/PJobApplicationTracker"
             target="_blank"
-            >Veja Meu Linkedin</a
+            class="project-link"
           >
-        </li>
-        <li>
-          <a href="https://github.com/Ryluna19" target="_blank"
-            >Veja Meu Portifolio</a
+            Ver projeto
+          </a>
+        </div>
+
+        <div class="project-card">
+          <div>
+            <h3>Flask Library System</h3>
+            <p>
+              Sistema web de biblioteca com Flask e MySQL, incluindo login,
+              cadastro, sessões, hash de senha e variáveis de ambiente.
+            </p>
+
+            <div class="tags">
+              <span>Python</span>
+              <span>Flask</span>
+              <span>MySQL</span>
+            </div>
+          </div>
+
+          <a
+            href="https://github.com/Ryluna19/PFlask-Library-System"
+            target="_blank"
+            class="project-link"
           >
-        </li>
-        <li>
-          <a href="#">To be Decided</a>
-        </li>
-        <li>
-          <a href="#">To be Decided</a>
-        </li>
-      </ul>
+            Ver projeto
+          </a>
+        </div>
+
+        <div class="project-card">
+          <div>
+            <h3>Cafés Próximos</h3>
+            <p>
+              Projeto web para localizar cafés próximos, explorando interface,
+              geolocalização e consumo de recursos do navegador.
+            </p>
+
+            <div class="tags">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+            </div>
+          </div>
+
+          <a
+            href="https://github.com/Ryluna19/PCafe_Proximos"
+            target="_blank"
+            class="project-link"
+          >
+            Ver projeto
+          </a>
+        </div>
+      </section>
+
+      <section class="skills-section">
+        <h2>Tecnologias</h2>
+
+        <div class="skills">
+          <span>JavaScript</span>
+          <span>TypeScript</span>
+          <span>React</span>
+          <span>Node.js</span>
+          <span>Express</span>
+          <span>PostgreSQL</span>
+          <span>Python</span>
+          <span>Flask</span>
+          <span>MySQL</span>
+          <span>Git</span>
+          <span>GitHub</span>
+        </div>
+      </section>
+
       <div id="social-links">
-        <a href="https://github.com/Ryluna19" target="_blank">
+        <a href="https://github.com/Ryluna19" target="_blank" aria-label="GitHub">
           <ion-icon name="logo-github"></ion-icon>
         </a>
-        <a href="https://www.instagram.com/ryanbulhoes_/" target="_blank">
-          <ion-icon name="logo-instagram"></ion-icon>
-        </a>
-        <a href="#" >
-          <ion-icon name="logo-youtube"></ion-icon>
-        </a>
-        <a href="https://www.linkedin.com/in/ryan-bulhoes-santos-560b25225/" target="_blank">
+
+        <a
+          href="https://www.linkedin.com/in/ryan-bulhoes-santos-560b25225/"
+          target="_blank"
+          aria-label="LinkedIn"
+        >
           <ion-icon name="logo-linkedin"></ion-icon>
         </a>
-        
+
+        <a href="mailto:ryan.bulhoes@gmail.com" aria-label="Email">
+          <ion-icon name="mail-outline"></ion-icon>
+        </a>
       </div>
+
       <footer>
-        Feito com ajuda da RockSeat. <ion-icon name="rocket"></ion-icon>
+        Página baseada no projeto DevLinks da Rocketseat, personalizada para portfólio profissional.
       </footer>
-    </div>
-    
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    </main>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+
     <script src="Script.js"></script>
-    
   </body>
 </html>
