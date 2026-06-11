@@ -1,7 +1,9 @@
 <h1 align="center">  💻 Projeto Profile</h1>
 
 <p align="center">
-Programa exclusivo e gratuito, promovido pela Rocketseat para ensino de tecnologias WEB. <br/>
+PPersonal Portfolio / Link Hub
+
+Página pessoal desenvolvida com HTML, CSS e JavaScript, baseada em um projeto educacional da Rocketseat e customizada para apresentar meu perfil, projetos, currículo e links profissionais. <br/>
 
 </p>
 
