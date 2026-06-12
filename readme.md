@@ -1,99 +1,157 @@
 <div align="center">
 
-# 💻 Personal Portfolio / Link Hub
+# Ryan Santos | Portfólio Pessoal
 
-Página pessoal desenvolvida com **HTML, CSS e JavaScript**, baseada no projeto educacional **DevLinks** da Rocketseat e personalizada para apresentar meu perfil profissional, principais projetos, tecnologias e links de contato.
+Portfólio pessoal desenvolvido para apresentar meus principais projetos, tecnologias, links profissionais e formas de contato.
 
-<br>
-
-[🔗 Acessar projeto online](https://ryluna19.github.io/PProfile/)
-
-<br>
-
-![Preview do projeto](https://github.com/user-attachments/assets/afe7f97f-e047-41ee-b9d9-c738840b4906)
+🔗 **GitHub:** [github.com/Ryluna19](https://github.com/Ryluna19)
+🔗 **LinkedIn:** [Ryan Santos](https://www.linkedin.com/in/ryan-bulhoes-santos-560b25225/)
 
 </div>
 
 ---
 
-## 📌 Sobre o projeto
+## Sobre o projeto
 
-Este projeto funciona como um cartão de visitas digital, reunindo meus principais links profissionais e projetos de portfólio em uma única página.
+Este projeto é meu portfólio pessoal como desenvolvedor web em início de carreira.
 
-A página apresenta:
+A página reúne informações sobre minha trajetória, tecnologias que venho estudando e projetos desenvolvidos com foco em desenvolvimento web, aplicações full-stack, CRUD, autenticação, banco de dados e interfaces funcionais.
 
-* Perfil profissional
-* Links para LinkedIn, GitHub e email
+O objetivo do portfólio é servir como uma apresentação profissional simples, direta e acessível para recrutadores, empresas e oportunidades de estágio ou posições júnior.
+
+---
+
+## Funcionalidades
+
+* Apresentação profissional
+* Links para LinkedIn, GitHub, email e currículo
+* Seção sobre mim
 * Projetos em destaque
-* Tecnologias utilizadas
-* Alternância entre tema claro e escuro
-* Layout responsivo para desktop e mobile
+* Lista de tecnologias
+* Tema claro e escuro
+* Layout responsivo
+* Design simples e direto para leitura rápida
 
 ---
 
-## 🚀 Tecnologias utilizadas
-
-* HTML5
-* CSS3
-* JavaScript
-* Git
-* GitHub
-* GitHub Pages
-
----
-
-## 🧩 Projetos em destaque
+## Projetos em destaque
 
 ### Job Application Tracker
 
-Aplicação full-stack para gerenciamento de candidaturas de emprego, com autenticação JWT, dashboard, CRUD, filtros e busca.
+Aplicação full-stack para gerenciar candidaturas de emprego, com autenticação JWT, dashboard, CRUD, filtros e busca.
 
-**Tecnologias:** React, Node.js, Express, PostgreSQL e JWT.
+**Tecnologias:** React, Node.js, PostgreSQL, JWT
+
+---
+
+### Music Playlist Manager
+
+Aplicação web para cadastrar, organizar e reproduzir músicas em playlists, com CRUD completo, área administrativa, busca, filtros, player customizado e integração com MongoDB Atlas.
+
+**Tecnologias:** Node.js, Express, EJS, MongoDB, JavaScript
+
+---
 
 ### Flask Library System
 
-Sistema web de biblioteca com cadastro, login, sessões, hash de senha e integração com banco de dados MySQL.
+Sistema web de biblioteca com Flask e MySQL, incluindo login, cadastro, sessões, hash de senha e variáveis de ambiente.
 
-**Tecnologias:** Python, Flask, MySQL, HTML e CSS.
+**Tecnologias:** Python, Flask, MySQL
+
+---
 
 ### Cafés Próximos
 
-Projeto web para localização de cafés próximos, explorando interface, geolocalização e recursos do navegador.
+Projeto web para localizar cafés próximos, explorando interface, geolocalização e consumo de recursos do navegador.
 
-**Tecnologias:** HTML, CSS e JavaScript.
-
----
-
-## 🎯 Objetivo
-
-O objetivo deste projeto é centralizar meus links profissionais e apresentar de forma simples os principais projetos desenvolvidos durante minha evolução como estudante de Análise de Sistemas e desenvolvedor web em formação.
+**Tecnologias:** HTML, CSS, JavaScript
 
 ---
 
-## 📱 Layout
+## Tecnologias utilizadas
 
-O layout foi adaptado para funcionar bem em diferentes tamanhos de tela, com uma interface simples, escura, responsiva e com destaque visual em laranja.
+<div align="center">
+
+![HTML](https://img.shields.io/badge/HTML-E34F26?style=for-the-badge\&logo=html5\&logoColor=white)
+![CSS](https://img.shields.io/badge/CSS-1572B6?style=for-the-badge\&logo=css\&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge\&logo=javascript\&logoColor=black)
+![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-222222?style=for-the-badge\&logo=github\&logoColor=white)
+
+</div>
 
 ---
 
-## 📚 Créditos
+## Estrutura do projeto
 
-Projeto baseado no **DevLinks**, desenvolvido durante estudos com a Rocketseat.
-
-A versão atual foi personalizada para funcionar como página pessoal e portfólio profissional.
+```txt
+PProfile/
+├── assets/
+│   ├── avatar.png
+│   ├── avatar-light.png
+│   ├── moon-stars.svg
+│   └── sun.svg
+├── index.html
+├── style.css
+├── Script.js
+└── readme.md
+```
 
 ---
 
-## 👨‍💻 Autor
+## Como executar localmente
+
+Clone o repositório:
+
+```bash
+git clone https://github.com/Ryluna19/PProfile.git
+```
+
+Entre na pasta do projeto:
+
+```bash
+cd PProfile
+```
+
+Abra o arquivo `index.html` no navegador.
+
+---
+
+## Aprendizados
+
+Durante o desenvolvimento e personalização deste portfólio, pratiquei:
+
+* Estruturação de páginas com HTML semântico
+* Organização visual com CSS
+* Responsividade
+* Manipulação simples do DOM com JavaScript
+* Alternância entre tema claro e escuro
+* Organização de projetos para apresentação profissional
+* Criação de um portfólio voltado para recrutadores
+
+---
+
+## Objetivo profissional
+
+Estou buscando oportunidades de estágio ou posições júnior em desenvolvimento web, onde eu possa aplicar meus conhecimentos, aprender com profissionais mais experientes e contribuir com projetos reais.
+
+---
+
+## Autor
 
 **Ryan Santos**
 
-* GitHub: [github.com/Ryluna19](https://github.com/Ryluna19)
-* LinkedIn: [linkedin.com/in/ryan-bulhoes-santos-560b25225](https://www.linkedin.com/in/ryan-bulhoes-santos-560b25225/)
+* GitHub: [@Ryluna19](https://github.com/Ryluna19)
+* LinkedIn: [Ryan Santos](https://www.linkedin.com/in/ryan-bulhoes-santos-560b25225/)
 * Email: [ryan.bulhoes@gmail.com](mailto:ryan.bulhoes@gmail.com)
 
 ---
 
-## 📄 Licença
+## Créditos
+
+Este portfólio foi baseado no projeto DevLinks da Rocketseat e personalizado para uso profissional como portfólio pessoal.
+
+---
+
+## Licença
 
 Este projeto está sob a licença MIT.

@@ -395,7 +395,7 @@ footer {
   line-height: 1.7;
 }
 
-.about-section p + p {
+.about-section p+p {
   margin-top: 12px;
 }
 
@@ -417,7 +417,7 @@ footer {
   line-height: 1.7;
 }
 
-.about-section p + p {
+.about-section p+p {
   margin-top: 12px;
 }
 
@@ -453,4 +453,84 @@ footer {
 .contact-button:hover {
   background: var(--accent-hover);
   transform: translateY(-2px);
+}
+
+/* Scroll Reveal */
+
+.reveal {
+  opacity: 0;
+  transform: translateY(42px) scale(0.98);
+  filter: blur(6px);
+  transition:
+    opacity 0.85s ease,
+    transform 0.85s ease,
+    filter 0.85s ease;
+  transition-delay: var(--reveal-delay, 0ms);
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+  filter: blur(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal {
+    opacity: 1;
+    transform: none;
+    filter: none;
+    transition: none;
+  }
+
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Subtle card glow */
+
+.project-card,
+.about-section,
+.contact-section {
+  position: relative;
+  overflow: hidden;
+}
+
+.project-card::before,
+.about-section::before,
+.contact-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(120deg,
+      transparent,
+      rgba(255, 122, 0, 0.08),
+      transparent);
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.3s ease;
+}
+
+.project-card:hover::before,
+.about-section:hover::before,
+.contact-section:hover::before {
+  opacity: 1;
+}
+
+/* Accessibility: disable animations if user prefers reduced motion */
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+  }
 }
