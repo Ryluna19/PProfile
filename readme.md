@@ -4,17 +4,17 @@
 
 Portfólio pessoal desenvolvido para apresentar meus principais projetos, tecnologias, objetivo profissional e formas de contato.
 
-Acessar portfólio online
+<a href="https://ryluna19.github.io/PProfile/" target="_blank">
+  <img src="https://img.shields.io/badge/Acessar%20Portf%C3%B3lio-ff7a00?style=for-the-badge&logo=githubpages&logoColor=white" alt="Acessar portfólio online" />
+</a>
 
-GitHub • LinkedIn
+<br />
+<br />
 
 [GitHub](https://github.com/Ryluna19) • [LinkedIn](https://www.linkedin.com/in/ryan-bulhoes-santos-560b25225/)
 
-<!-- Quando o projeto estiver online, adicione o link abaixo -->
-
-<!-- 🌐 Portfólio online: https://ryluna19.github.io/PProfile/ -->
-
 </div>
+
 
 ---
 
