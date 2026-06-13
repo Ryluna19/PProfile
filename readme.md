@@ -2,10 +2,13 @@
 
 # Ryan Santos | Portfólio Pessoal
 
-Portfólio pessoal desenvolvido para apresentar meus principais projetos, tecnologias, links profissionais e formas de contato.
+Portfólio pessoal desenvolvido para apresentar meus principais projetos, tecnologias, objetivo profissional e formas de contato.
 
-🔗 **GitHub:** [github.com/Ryluna19](https://github.com/Ryluna19)
-🔗 **LinkedIn:** [Ryan Santos](https://www.linkedin.com/in/ryan-bulhoes-santos-560b25225/)
+[GitHub](https://github.com/Ryluna19) • [LinkedIn](https://www.linkedin.com/in/ryan-bulhoes-santos-560b25225/)
+
+<!-- Quando o projeto estiver online, adicione o link abaixo -->
+
+<!-- 🌐 Portfólio online: https://seu-link-aqui.com -->
 
 </div>
 
@@ -15,26 +18,28 @@ Portfólio pessoal desenvolvido para apresentar meus principais projetos, tecnol
 
 Este projeto é meu portfólio pessoal como desenvolvedor web em início de carreira.
 
-A página reúne informações sobre minha trajetória, tecnologias que venho estudando e projetos desenvolvidos com foco em desenvolvimento web, aplicações full-stack, CRUD, autenticação, banco de dados e interfaces funcionais.
+A página foi criada para reunir, de forma simples e direta, informações sobre minha trajetória, tecnologias que venho estudando, projetos em destaque e formas de contato.
 
-O objetivo do portfólio é servir como uma apresentação profissional simples, direta e acessível para recrutadores, empresas e oportunidades de estágio ou posições júnior.
+O objetivo é servir como uma apresentação profissional para oportunidades de estágio ou posições júnior em desenvolvimento web.
 
 ---
 
 ## Funcionalidades
 
 * Apresentação profissional
-* Links para LinkedIn, GitHub, email e currículo
+* Links para currículo, GitHub, LinkedIn e contato
 * Seção sobre mim
-* Projetos em destaque
-* Lista de tecnologias
+* Objetivo profissional
+* Resumo técnico por área
+* Projetos em destaque com preview
+* Tecnologias organizadas por categoria
 * Tema claro e escuro
+* Navegação suave entre seções
 * Layout responsivo
-* Design simples e direto para leitura rápida
 
 ---
 
-## Projetos em destaque
+## Projetos apresentados
 
 ### Job Application Tracker
 
@@ -62,7 +67,7 @@ Sistema web de biblioteca com Flask e MySQL, incluindo login, cadastro, sessões
 
 ### Cafés Próximos
 
-Projeto web para localizar cafés próximos, explorando interface, geolocalização e consumo de recursos do navegador.
+Projeto web para localizar cafés próximos, explorando interface, geolocalização e recursos do navegador.
 
 **Tecnologias:** HTML, CSS, JavaScript
 
@@ -70,12 +75,19 @@ Projeto web para localizar cafés próximos, explorando interface, geolocalizaç
 
 ## Tecnologias utilizadas
 
+Este portfólio foi desenvolvido com:
+
+HTML5
+CSS3
+JavaScript
+Ionicons
+Git e GitHub
+
 <div align="center">
 
 ![HTML](https://img.shields.io/badge/HTML-E34F26?style=for-the-badge\&logo=html5\&logoColor=white)
 ![CSS](https://img.shields.io/badge/CSS-1572B6?style=for-the-badge\&logo=css\&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge\&logo=javascript\&logoColor=black)
-![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-222222?style=for-the-badge\&logo=github\&logoColor=white)
 
 </div>
 
@@ -86,6 +98,7 @@ Projeto web para localizar cafés próximos, explorando interface, geolocalizaç
 ```txt
 PProfile/
 ├── assets/
+│   ├── projects/
 │   ├── avatar.png
 │   ├── avatar-light.png
 │   ├── moon-stars.svg
@@ -120,19 +133,19 @@ Abra o arquivo `index.html` no navegador.
 
 Durante o desenvolvimento e personalização deste portfólio, pratiquei:
 
-* Estruturação de páginas com HTML semântico
+* Estruturação de páginas com HTML
 * Organização visual com CSS
 * Responsividade
-* Manipulação simples do DOM com JavaScript
-* Alternância entre tema claro e escuro
+* Manipulação do DOM com JavaScript
+* Tema claro e escuro
+* Navegação suave entre seções
 * Organização de projetos para apresentação profissional
-* Criação de um portfólio voltado para recrutadores
 
 ---
 
-## Objetivo profissional
+## Status
 
-Estou buscando oportunidades de estágio ou posições júnior em desenvolvimento web, onde eu possa aplicar meus conhecimentos, aprender com profissionais mais experientes e contribuir com projetos reais.
+Projeto em desenvolvimento e sendo atualizado conforme avanço meu portfólio.
 
 ---
 
@@ -148,7 +161,7 @@ Estou buscando oportunidades de estágio ou posições júnior em desenvolviment
 
 ## Créditos
 
-Este portfólio foi baseado no projeto DevLinks da Rocketseat e personalizado para uso profissional como portfólio pessoal.
+Este projeto teve como referência inicial o DevLinks da Rocketseat, sendo posteriormente adaptado e expandido para uso como portfólio pessoal profissional.
 
 ---
 
