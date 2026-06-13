@@ -1,404 +1,516 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+  <head>
+    <!-- Configuração básica da página -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <title>Ryan Santos | Desenvolvedor Web</title>
 
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <!-- Fonte principal do projeto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
 
-  <title>Ryan Santos | Desenvolvedor Web</title>
+    <!-- CSS principal -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-  <link rel="stylesheet" href="style.css" />
-</head>
+  <body>
+    <main id="container">
+      <!-- Menu superior fixo -->
+      <header class="site-header">
+        <a href="#profile" class="logo">Ryan Santos</a>
 
-<body>
-  <main id="container">
+        <nav class="site-nav" aria-label="Navegação principal">
+          <a href="#sobre">Sobre</a>
+          <a href="#projetos">Projetos</a>
+          <a href="#tecnologias">Tecnologias</a>
+          <a href="#contato">Contato</a>
+        </nav>
+      </header>
 
-    <header class="site-header">
-      <a href="#profile" class="logo">Ryan Santos</a>
+      <!-- Apresentação principal -->
+      <section id="profile" class="hero-section">
+        <img src="assets/avatar.png" alt="Foto de Ryan Santos" />
 
-      <nav class="site-nav">
-        <a href="#sobre">Sobre</a>
-        <a href="#projetos">Projetos</a>
-        <a href="#tecnologias">Tecnologias</a>
-        <a href="#contato">Contato</a>
-      </nav>
-    </header>
-    <section id="profile">
-      <img src="assets/avatar.png" alt="Foto de Ryan Santos" />
+        <p class="eyebrow">Portfólio pessoal</p>
 
-      <p class="eyebrow">Portfólio pessoal</p>
+        <h1>Ryan Santos</h1>
 
-      <h1>Ryan Santos</h1>
+        <p class="subtitle">
+          Desenvolvedor Web | React | Node.js | PostgreSQL | Python/Flask
+        </p>
 
-      <p class="subtitle">
-        Desenvolvedor Web | React | Node.js | PostgreSQL | Python/Flask
-      </p>
+        <p class="description">
+          Estudante de Análise de Sistemas de Computação em fase final de
+          formação, com foco em desenvolvimento web, aplicações full-stack e
+          bancos de dados. Busco minha primeira oportunidade profissional como
+          estagiário ou desenvolvedor júnior.
+        </p>
 
-      <p class="description">
-        Estudante de Análise de Sistemas de Computação em fase final de formação,
-        com foco em desenvolvimento web, aplicações full-stack e bancos de dados.
-        Busco minha primeira oportunidade profissional como estagiário ou
-        desenvolvedor júnior.
-      </p>
-
-      <div class="hero-actions">
-        <a href="https://github.com/Ryluna19" target="_blank" rel="noopener noreferrer">
-          <ion-icon name="logo-github"></ion-icon>
-          GitHub
-        </a>
-
-        <a href="https://www.linkedin.com/in/ryan-bulhoes-santos-560b25225/" target="_blank" rel="noopener noreferrer"
-          class="secondary-action">
-          <ion-icon name="logo-linkedin"></ion-icon>
-          LinkedIn
-        </a>
-
-        <a href="mailto:ryan.bulhoes@gmail.com" class="secondary-action">
-          <ion-icon name="mail-outline"></ion-icon>
-          Contato
-        </a>
-      </div>
-    </section>
-
-    <div id="switch" onclick="toggleMode()">
-      <button aria-label="Alterar tema"></button>
-      <span></span>
-    </div>
-    <section class="highlights-section">
-      <div class="highlight-card">
-        <span>Formação</span>
-        <strong>Análise de Sistemas</strong>
-      </div>
-
-      <div class="highlight-card">
-        <span>Foco</span>
-        <strong>Desenvolvimento Web</strong>
-      </div>
-
-      <div class="highlight-card">
-        <span>Objetivo</span>
-        <strong>Estágio / Júnior</strong>
-      </div>
-    </section>
-
-    <section class="links-section">
-      <h2>Links profissionais</h2>
-
-      <ul class="main-links">
-        <li>
-          <a href="https://www.linkedin.com/in/ryan-bulhoes-santos-560b25225/" target="_blank" rel="noopener noreferrer">
-            <ion-icon name="logo-linkedin"></ion-icon>
-            LinkedIn
+        <!-- Ações principais para recrutadores -->
+        <div class="hero-actions">
+          <a
+            href="assets/Curriculo_Ryan_Santos.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="primary-action"
+          >
+            <ion-icon name="document-text-outline"></ion-icon>
+            Currículo
           </a>
-        </li>
 
-        <li>
-          <a href="https://github.com/Ryluna19" target="_blank" rel="noopener noreferrer">
+          <a
+            href="https://github.com/Ryluna19"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <ion-icon name="logo-github"></ion-icon>
             GitHub
           </a>
-        </li>
 
-        <li>
-          <a href="mailto:ryan.bulhoes@gmail.com" target="_blank" rel="noopener noreferrer  ">
-            <ion-icon name="mail-outline"></ion-icon>
-            Email
+          <a
+            href="https://www.linkedin.com/in/ryan-bulhoes-santos-560b25225/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <ion-icon name="logo-linkedin"></ion-icon>
+            LinkedIn
           </a>
-        </li>
-      </ul>
-    </section>
 
-    <section class="projects-section" id="projetos">
-      <div class="section-header">
-        <p class="eyebrow">Portfólio</p>
-        <h2>Projetos em destaque</h2>
+          <a href="mailto:ryan.bulhoes@gmail.com">
+            <ion-icon name="mail-outline"></ion-icon>
+            Contato
+          </a>
+        </div>
+      </section>
+
+      <!-- Botão de tema claro/escuro -->
+      <div id="switch">
+        <button
+          type="button"
+          aria-label="Alterar tema"
+          aria-pressed="false"
+          onclick="toggleMode()"
+        ></button>
+        <span></span>
       </div>
 
-      <div class="projects-grid">
-        <article class="project-card featured-project">
-          <div class="project-image">
-            <img src="assets/projects/job-tracker.png" alt="Preview do projeto Job Application Tracker"
-              loading="lazy" />
+      <!-- Resumo rápido -->
+      <section class="highlights-section" aria-label="Resumo profissional">
+        <div class="highlight-card">
+          <span>Formação</span>
+          <strong>Análise de Sistemas</strong>
+        </div>
+
+        <div class="highlight-card">
+          <span>Foco</span>
+          <strong>Desenvolvimento Web</strong>
+        </div>
+
+        <div class="highlight-card">
+          <span>Objetivo</span>
+          <strong>Estágio / Júnior</strong>
+        </div>
+      </section>
+
+      <!-- Sobre mim -->
+      <section class="about-section card-section" id="sobre">
+        <h2>Sobre mim</h2>
+
+        <p>
+          Sou estudante de Análise de Sistemas de Computação e estou construindo
+          meu portfólio com foco em desenvolvimento web. Tenho estudado e
+          desenvolvido projetos utilizando JavaScript, React, Node.js, Express,
+          Python, Flask e bancos de dados relacionais e não relacionais.
+        </p>
+
+        <p>
+          Meus projetos buscam demonstrar conhecimentos práticos em criação de
+          interfaces, operações CRUD, autenticação, organização de código,
+          integração com banco de dados e construção de aplicações funcionais.
+        </p>
+
+        <p>
+          Além da parte técnica, trago experiência com atendimento e suporte, o
+          que me ajudou a desenvolver comunicação, resolução de problemas,
+          responsabilidade e facilidade para lidar com diferentes tipos de
+          pessoas.
+        </p>
+      </section>
+
+      <!-- Objetivo profissional -->
+      <section class="goal-section card-section">
+        <h2>O que estou buscando</h2>
+
+        <div class="goal-grid">
+          <div class="goal-card">
+            <h3>Estágio em desenvolvimento</h3>
+            <p>
+              Oportunidades para aplicar meus conhecimentos em projetos reais,
+              aprender com profissionais experientes e evoluir tecnicamente.
+            </p>
           </div>
 
-          <div class="project-content">
-            <span class="project-type">Projeto principal full-stack</span>
-
-            <h3>Job Application Tracker</h3>
-
+          <div class="goal-card">
+            <h3>Posição júnior inicial</h3>
             <p>
-              Aplicação full-stack para gerenciar candidaturas de emprego, com
-              autenticação JWT, dashboard, CRUD, filtros e busca.
+              Vagas de entrada onde eu possa contribuir com desenvolvimento web,
+              manutenção de sistemas, criação de interfaces e integração com
+              APIs.
             </p>
+          </div>
+        </div>
+      </section>
 
-            <div class="tags">
-              <span>React</span>
-              <span>Node.js</span>
-              <span>PostgreSQL</span>
-              <span>JWT</span>
+      <!-- Resumo técnico por área -->
+      <section class="technical-summary-section card-section">
+        <h2>Resumo técnico</h2>
+
+        <div class="technical-grid">
+          <div class="technical-card">
+            <ion-icon name="code-slash-outline"></ion-icon>
+            <h3>Front-end</h3>
+            <p>
+              Criação de interfaces responsivas com HTML, CSS, JavaScript e
+              React, buscando clareza visual, organização e boa experiência de
+              uso.
+            </p>
+          </div>
+
+          <div class="technical-card">
+            <ion-icon name="server-outline"></ion-icon>
+            <h3>Back-end</h3>
+            <p>
+              Desenvolvimento de APIs e aplicações com Node.js, Express, Python
+              e Flask, incluindo rotas, regras de negócio e integração com banco
+              de dados.
+            </p>
+          </div>
+
+          <div class="technical-card">
+            <ion-icon name="file-tray-stacked-outline"></ion-icon>
+            <h3>Banco de dados</h3>
+            <p>
+              Uso de PostgreSQL, MySQL e MongoDB em projetos com CRUD,
+              autenticação, persistência de dados e organização de informações.
+            </p>
+          </div>
+
+          <div class="technical-card">
+            <ion-icon name="git-branch-outline"></ion-icon>
+            <h3>Ferramentas</h3>
+            <p>
+              Organização de projetos com Git, GitHub, variáveis de ambiente,
+              documentação, versionamento e estruturação de aplicações.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Tradução das habilidades para valor profissional -->
+      <section class="contribution-section card-section">
+        <h2>Como posso contribuir</h2>
+
+        <div class="contribution-grid">
+          <div class="contribution-card">
+            <h3>Desenvolvimento de interfaces</h3>
+            <p>
+              Posso contribuir na criação e manutenção de telas responsivas,
+              organizadas e funcionais, com foco em clareza visual e boa
+              experiência para o usuário.
+            </p>
+          </div>
+
+          <div class="contribution-card">
+            <h3>APIs e banco de dados</h3>
+            <p>
+              Tenho praticado criação de rotas, operações CRUD, autenticação,
+              integração com bancos relacionais e não relacionais, além de
+              organização básica de aplicações web.
+            </p>
+          </div>
+
+          <div class="contribution-card">
+            <h3>Aprendizado e colaboração</h3>
+            <p>
+              Busco evoluir em ambiente profissional, aprendendo com pessoas
+              mais experientes, recebendo feedbacks e contribuindo com
+              responsabilidade nas demandas do time.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projetos em destaque -->
+      <section class="projects-section" id="projetos">
+        <div class="section-header">
+          <p class="eyebrow">Portfólio</p>
+
+          <h2>Projetos em destaque</h2>
+
+          <p>
+            Projetos selecionados para demonstrar prática com aplicações web,
+            integração com banco de dados, CRUD, autenticação e interfaces
+            funcionais.
+          </p>
+        </div>
+
+        <div class="projects-grid">
+          <article class="project-card featured-project">
+            <div class="project-image">
+              <img
+                src="assets/projects/job-tracker.png"
+                alt="Preview do projeto Job Application Tracker"
+                loading="lazy"
+              />
             </div>
 
-            <a href="https://github.com/Ryluna19/PJobApplicationTracker" target="_blank" rel="noopener noreferrer" class="project-link">
-              Ver código
-            </a>
-          </div>
-        </article>
+            <div class="project-content">
+              <span class="project-type">Projeto principal full-stack</span>
 
-        <article class="project-card">
-          <div class="project-image">
-            <img src="assets/projects/music-playlist.png" alt="Preview do projeto Music Playlist Manager"
-              loading="lazy" />
-          </div>
+              <h3>Job Application Tracker</h3>
 
-          <div class="project-content">
-            <span class="project-type">Node.js + MongoDB</span>
+              <p>
+                Aplicação full-stack para gerenciar candidaturas de emprego, com
+                autenticação JWT, dashboard, CRUD, filtros e busca.
+              </p>
 
-            <h3>Music Playlist Manager</h3>
+              <div class="tags">
+                <span>React</span>
+                <span>Node.js</span>
+                <span>PostgreSQL</span>
+                <span>JWT</span>
+              </div>
 
-            <p>
-              Aplicação web para cadastrar, organizar e reproduzir músicas em
-              playlists, com CRUD completo, área administrativa, busca, filtros,
-              player customizado e integração com MongoDB Atlas.
-            </p>
+              <a
+                href="https://github.com/Ryluna19/PJobApplicationTracker"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="project-link"
+              >
+                Ver código
+              </a>
+            </div>
+          </article>
 
-            <div class="tags">
-              <span>Node.js</span>
-              <span>Express</span>
-              <span>EJS</span>
-              <span>MongoDB</span>
-              <span>JavaScript</span>
+          <article class="project-card">
+            <div class="project-image">
+              <img
+                src="assets/projects/music-playlist.png"
+                alt="Preview do projeto Music Playlist Manager"
+                loading="lazy"
+              />
             </div>
 
-            <a href="https://github.com/Ryluna19/PMusicPlaylist" target="_blank" rel="noopener noreferrer" class="project-link">
-              Ver código
-            </a>
-          </div>
-        </article>
+            <div class="project-content">
+              <span class="project-type">Node.js + MongoDB</span>
 
-        <article class="project-card">
-          <div class="project-image">
-            <img src="assets/projects/flask-library.png" alt="Preview do projeto Flask Library System" loading="lazy" />
-          </div>
+              <h3>Music Playlist Manager</h3>
 
-          <div class="project-content">
-            <span class="project-type">Python + Flask</span>
+              <p>
+                Aplicação web para cadastrar, organizar e reproduzir músicas em
+                playlists, com CRUD completo, área administrativa, busca,
+                filtros, player customizado e integração com MongoDB Atlas.
+              </p>
 
-            <h3>Flask Library System</h3>
+              <div class="tags">
+                <span>Node.js</span>
+                <span>Express</span>
+                <span>EJS</span>
+                <span>MongoDB</span>
+                <span>JavaScript</span>
+              </div>
 
-            <p>
-              Sistema web de biblioteca com Flask e MySQL, incluindo login,
-              cadastro, sessões, hash de senha e variáveis de ambiente.
-            </p>
+              <a
+                href="https://github.com/Ryluna19/PMusicPlaylist"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="project-link"
+              >
+                Ver código
+              </a>
+            </div>
+          </article>
 
-            <div class="tags">
-              <span>Python</span>
-              <span>Flask</span>
-              <span>MySQL</span>
+          <article class="project-card">
+            <div class="project-image">
+              <img
+                src="assets/projects/flask-library.png"
+                alt="Preview do projeto Flask Library System"
+                loading="lazy"
+              />
             </div>
 
-            <a href="https://github.com/Ryluna19/PFlask-Library-System" target="_blank" class="project-link">
-              Ver código
-            </a>
-          </div>
-        </article>
+            <div class="project-content">
+              <span class="project-type">Python + Flask</span>
 
-        <article class="project-card">
-          <div class="project-image">
-            <img src="assets/projects/cafes-proximos.png" alt="Preview do projeto Cafés Próximos" loading="lazy" />
-          </div>
+              <h3>Flask Library System</h3>
 
-          <div class="project-content">
-            <span class="project-type">JavaScript + Geolocalização</span>
+              <p>
+                Sistema web de biblioteca com Flask e MySQL, incluindo login,
+                cadastro, sessões, hash de senha e variáveis de ambiente.
+              </p>
 
-            <h3>Cafés Próximos</h3>
+              <div class="tags">
+                <span>Python</span>
+                <span>Flask</span>
+                <span>MySQL</span>
+              </div>
 
-            <p>
-              Projeto web para localizar cafés próximos, explorando interface,
-              geolocalização e consumo de recursos do navegador.
-            </p>
+              <a
+                href="https://github.com/Ryluna19/PFlask-Library-System"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="project-link"
+              >
+                Ver código
+              </a>
+            </div>
+          </article>
 
-            <div class="tags">
+          <article class="project-card">
+            <div class="project-image">
+              <img
+                src="assets/projects/cafes-proximos.png"
+                alt="Preview do projeto Cafés Próximos"
+                loading="lazy"
+              />
+            </div>
+
+            <div class="project-content">
+              <span class="project-type">JavaScript + Geolocalização</span>
+
+              <h3>Cafés Próximos</h3>
+
+              <p>
+                Projeto web para localizar cafés próximos, explorando interface,
+                geolocalização e consumo de recursos do navegador.
+              </p>
+
+              <div class="tags">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+              </div>
+
+              <a
+                href="https://github.com/Ryluna19/PCafe_Proximos"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="project-link"
+              >
+                Ver código
+              </a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- Tecnologias organizadas por categoria -->
+      <section class="skills-section" id="tecnologias">
+        <h2>Tecnologias</h2>
+
+        <div class="skills-groups">
+          <div class="skills-group">
+            <h3>Front-end</h3>
+
+            <div class="skills">
               <span>HTML</span>
               <span>CSS</span>
               <span>JavaScript</span>
+              <span>TypeScript</span>
+              <span>React</span>
             </div>
-
-            <a href="https://github.com/Ryluna19/PCafe_Proximos" target="_blank" class="project-link">
-              Ver código
-            </a>
           </div>
-        </article>
-      </div>
-    </section>
 
-    <section class="skills-section" id="tecnologias">
-      <h2>Tecnologias</h2>
+          <div class="skills-group">
+            <h3>Back-end</h3>
 
-      <div class="skills-groups">
-        <div class="skills-group">
-          <h3>Front-end</h3>
-
-          <div class="skills">
-            <span>HTML</span>
-            <span>CSS</span>
-            <span>JavaScript</span>
-            <span>TypeScript</span>
-            <span>React</span>
+            <div class="skills">
+              <span>Node.js</span>
+              <span>Express</span>
+              <span>Python</span>
+              <span>Flask</span>
+            </div>
           </div>
-        </div>
 
-        <div class="skills-group">
-          <h3>Back-end</h3>
+          <div class="skills-group">
+            <h3>Banco de dados</h3>
 
-          <div class="skills">
-            <span>Node.js</span>
-            <span>Express</span>
-            <span>Python</span>
-            <span>Flask</span>
+            <div class="skills">
+              <span>PostgreSQL</span>
+              <span>MySQL</span>
+              <span>MongoDB</span>
+              <span>SQL</span>
+            </div>
           </div>
-        </div>
 
-        <div class="skills-group">
-          <h3>Banco de dados</h3>
+          <div class="skills-group">
+            <h3>Ferramentas</h3>
 
-          <div class="skills">
-            <span>PostgreSQL</span>
-            <span>MySQL</span>
-            <span>MongoDB</span>
-            <span>SQL</span>
+            <div class="skills">
+              <span>Git</span>
+              <span>GitHub</span>
+              <span>VS Code</span>
+              <span>Power BI</span>
+              <span>Excel</span>
+            </div>
           </div>
         </div>
+      </section>
 
-        <div class="skills-group">
-          <h3>Ferramentas</h3>
+      <!-- Contato final -->
+      <section class="contact-section card-section" id="contato">
+        <h2>Contato</h2>
 
-          <div class="skills">
-            <span>Git</span>
-            <span>GitHub</span>
-            <span>VS Code</span>
-            <span>Power BI</span>
-            <span>Excel</span>
-          </div>
+        <p>
+          Estou em busca de oportunidades de estágio ou posições júnior em
+          desenvolvimento web. Fique à vontade para entrar em contato pelo
+          LinkedIn ou email.
+        </p>
+
+        <div class="contact-actions">
+          <a href="mailto:ryan.bulhoes@gmail.com" class="contact-button">
+            <ion-icon name="mail-outline"></ion-icon>
+            Enviar email
+          </a>
+
+          <a
+            href="https://www.linkedin.com/in/ryan-bulhoes-santos-560b25225/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="contact-button secondary-contact"
+          >
+            <ion-icon name="logo-linkedin"></ion-icon>
+            LinkedIn
+          </a>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="contact-section" id="contato">
-      <h2>Contato</h2>
+      <footer>
+        Página baseada no projeto DevLinks da Rocketseat, personalizada para
+        portfólio profissional.
+      </footer>
+    </main>
 
-      <p>
-        Estou em busca de oportunidades de estágio ou posições júnior em
-        desenvolvimento web. Fique à vontade para entrar em contato pelo LinkedIn
-        ou email.
-      </p>
+    <!-- Ícones usados nos botões e cards -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
 
-      <a href="mailto:ryan.bulhoes@gmail.com" class="contact-button">
-        Entrar em contato
-      </a>
-    </section>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
 
-    <div id="social-links">
-
-      <a href="assets/Curriculo_Ryan_Santos.pdf" target="_blank" aria-label="Currículo" rel="noopener noreferrer">
-        <ion-icon name="document-text-outline"></ion-icon>
-        Currículo
-      </a>
-      </li>
-      <a href="https://github.com/Ryluna19" target="_blank" rel="noopener noreferrer"  aria-label="GitHub">
-        <ion-icon name="logo-github"></ion-icon>
-      </a>
-
-      <a href="https://www.linkedin.com/in/ryan-bulhoes-santos-560b25225/" target="_blank" aria-label="LinkedIn" rel="noopener noreferrer">
-        <ion-icon name="logo-linkedin"></ion-icon>
-      </a>
-
-      <a href="mailto:ryan.bulhoes@gmail.com" aria-label="Email" rel="noopener noreferrer">
-        <ion-icon name="mail-outline"></ion-icon>
-      </a>
-    </div>
-
-    <section class="about-section" id="sobre">
-      <h2>Sobre mim</h2>
-
-      <p>
-        Sou estudante de Análise de Sistemas de Computação e estou construindo meu
-        portfólio com foco em desenvolvimento web. Tenho estudado e desenvolvido
-        projetos utilizando JavaScript, React, Node.js, Express, Python, Flask e
-        bancos de dados relacionais e não relacionais.
-      </p>
-
-      <p>
-        Meus projetos buscam demonstrar conhecimentos práticos em criação de
-        interfaces, operações CRUD, autenticação, organização de código, integração
-        com banco de dados e construção de aplicações funcionais.
-      </p>
-
-      <p>
-        Além da parte técnica, trago experiência com atendimento e suporte, o que
-        me ajudou a desenvolver comunicação, resolução de problemas, responsabilidade
-        e facilidade para lidar com diferentes tipos de pessoas.
-      </p>
-    </section>
-
-
-    <section class="goal-section">
-      <h2>O que estou buscando</h2>
-
-      <div class="goal-grid">
-        <div class="goal-card">
-          <h3>Estágio em desenvolvimento</h3>
-          <p>
-            Oportunidades para aplicar meus conhecimentos em projetos reais,
-            aprender com profissionais experientes e evoluir tecnicamente.
-          </p>
-        </div>
-
-        <div class="goal-card">
-          <h3>Posição júnior inicial</h3>
-          <p>
-            Vagas de entrada onde eu possa contribuir com desenvolvimento web,
-            manutenção de sistemas, criação de interfaces e integração com APIs.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <section class="technical-summary-section">
-      <h2>Resumo técnico</h2>
-
-      <div class="technical-grid">
-        <div class="technical-card">
-          <ion-icon name="code-slash-outline"></ion-icon>
-          <h3>Front-end</h3>
-          <p>
-            Criação de interfaces responsivas com HTML, CSS, JavaScript e React,
-            buscando clareza visual, organização e boa experiência de uso.
-          </p>
-        </div>
-
-        <div class="technical-card">
-          <ion-icon name="server-outline"></ion-icon>
-          <h3>Back-end</h3>
-          <p>
-            Desenvolvimento de APIs e aplicações com Node.js, Express, Python e
-            Flask, incluindo rotas, regras de negócio e integração com banco de dados.
-          </p>
-        </div>
-        <footer>
-          Página baseada no projeto DevLinks da Rocketseat, personalizada para portfólio profissional.
-        </footer>
-  </main>
-
-  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-
-  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-
-  <script src="Script.js"></script>
-</body>
-
+    <!-- JavaScript principal -->
+    <script src="Script.js"></script>
+  </body>
 </html>
