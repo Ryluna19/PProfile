@@ -38,7 +38,7 @@ html {
   scroll-behavior: smooth;
 }
 
-/* Evita que o menu fixo cubra o topo das seções */
+/* Evita que o header cubra as seções ao clicar no menu */
 #profile,
 #sobre,
 #projetos,
@@ -86,9 +86,9 @@ button:focus-visible {
   top: 14px;
   z-index: 10;
 
-  display: flex;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
   align-items: center;
-  justify-content: space-between;
   gap: 16px;
 
   margin-bottom: 44px;
@@ -111,11 +111,13 @@ button:focus-visible {
   text-decoration: none;
   font-size: 0.9rem;
   font-weight: 800;
+  white-space: nowrap;
 }
 
 .site-nav {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 6px;
 }
 
@@ -135,6 +137,24 @@ button:focus-visible {
 .site-nav a:hover {
   color: var(--accent-color);
   background: var(--highlight-color);
+}
+
+/* Botão de tema no header */
+.theme-toggle {
+  width: 36px;
+  height: 36px;
+
+  background: #ffffff var(--switch-bg-url) no-repeat center;
+  border: 1px solid var(--stroke-color);
+  border-radius: 50%;
+
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.theme-toggle:hover {
+  outline: 8px solid var(--highlight-color);
+  transform: translateY(-1px);
 }
 
 /* ================================
@@ -275,56 +295,6 @@ section h2 {
 
 .hero-actions ion-icon {
   font-size: 1.1rem;
-}
-
-/* ================================
-   Theme Switch
-================================ */
-
-#switch {
-  position: relative;
-  width: 64px;
-  margin: 24px auto 32px;
-}
-
-#switch button {
-  width: 32px;
-  height: 32px;
-
-  background: #ffffff var(--switch-bg-url) no-repeat center;
-  border: 0;
-  border-radius: 50%;
-
-  position: absolute;
-  top: 50%;
-  left: 0;
-  z-index: 1;
-
-  transform: translateY(-50%);
-  cursor: pointer;
-
-  animation: slide-out 0.2s;
-}
-
-.light #switch button {
-  animation: slide-in 0.3s forwards;
-}
-
-#switch button:hover {
-  outline: 8px solid var(--highlight-color);
-}
-
-#switch span {
-  display: block;
-  width: 64px;
-  height: 24px;
-
-  background: var(--card-color);
-  border: 1px solid var(--stroke-color);
-  border-radius: 9999px;
-
-  backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px);
 }
 
 /* ================================
@@ -571,6 +541,17 @@ section h2 {
   margin-bottom: 14px;
 }
 
+.project-proof {
+  padding: 10px 12px;
+
+  background: var(--inner-card-color);
+  border: 1px solid var(--stroke-color);
+  border-radius: 12px;
+
+  color: var(--muted-color) !important;
+  font-size: 0.86rem !important;
+}
+
 .tags,
 .skills {
   display: flex;
@@ -579,7 +560,7 @@ section h2 {
 }
 
 .tags {
-  margin-bottom: 18px;
+  margin-bottom: 14px;
 }
 
 .tags span,
@@ -650,6 +631,40 @@ section h2 {
   margin: 0 auto 18px;
 }
 
+.contact-info {
+  width: fit-content;
+  max-width: 100%;
+  margin: 0 auto 14px;
+  padding: 12px 16px;
+
+  background: var(--inner-card-color);
+  border: 1px solid var(--stroke-color);
+  border-radius: 14px;
+}
+
+.contact-info span {
+  display: block;
+
+  color: var(--muted-color);
+  font-size: 0.78rem;
+  margin-bottom: 4px;
+}
+
+.contact-info strong {
+  color: var(--text-color);
+  font-size: 0.95rem;
+  word-break: break-word;
+}
+
+.copy-feedback {
+  min-height: 20px;
+
+  color: var(--accent-color) !important;
+  font-size: 0.85rem !important;
+  font-weight: 700;
+  margin-bottom: 14px !important;
+}
+
 .contact-actions {
   display: flex;
   align-items: center;
@@ -677,6 +692,7 @@ section h2 {
   font-size: 0.95rem;
   font-weight: 800;
 
+  cursor: pointer;
   transition: 0.2s ease;
 }
 
@@ -719,13 +735,13 @@ footer {
 
 .scroll-reveal {
   opacity: 0;
-  transform: translateY(64px) scale(0.97);
-  filter: blur(8px);
+  transform: translateY(38px) scale(0.99);
+  filter: blur(4px);
 
   transition:
-    opacity 0.9s ease,
-    transform 0.9s ease,
-    filter 0.9s ease;
+    opacity 0.58s ease,
+    transform 0.58s ease,
+    filter 0.58s ease;
 
   transition-delay: var(--reveal-delay, 0ms);
 }
@@ -734,30 +750,6 @@ footer {
   opacity: 1;
   transform: translateY(0) scale(1);
   filter: blur(0);
-}
-
-/* ================================
-   Animations
-================================ */
-
-@keyframes slide-in {
-  from {
-    left: 0;
-  }
-
-  to {
-    left: 50%;
-  }
-}
-
-@keyframes slide-out {
-  from {
-    left: 50%;
-  }
-
-  to {
-    left: 0;
-  }
 }
 
 /* ================================
@@ -771,7 +763,8 @@ footer {
 
   .site-header {
     position: static;
-    flex-direction: column;
+    grid-template-columns: 1fr;
+    justify-items: center;
     border-radius: 18px;
     margin-bottom: 32px;
   }
@@ -779,6 +772,10 @@ footer {
   .site-nav {
     flex-wrap: wrap;
     justify-content: center;
+  }
+
+  .theme-toggle {
+    margin-top: 4px;
   }
 
   #profile h1 {
@@ -805,24 +802,5 @@ footer {
 
   .section-header h2 {
     font-size: 1.3rem;
-  }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  html {
-    scroll-behavior: auto;
-  }
-
-  *,
-  *::before,
-  *::after {
-    transition: none !important;
-    animation: none !important;
-  }
-
-  .scroll-reveal {
-    opacity: 1;
-    transform: none;
-    filter: none;
   }
 }

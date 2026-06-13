@@ -7,7 +7,7 @@
 
     <title>Ryan Santos | Desenvolvedor Web</title>
 
-    <!-- Fonte principal do projeto -->
+    <!-- Fonte principal -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
@@ -22,7 +22,7 @@
 
   <body>
     <main id="container">
-      <!-- Menu superior fixo -->
+      <!-- Header / Navegação principal -->
       <header class="site-header">
         <a href="#profile" class="logo">Ryan Santos</a>
 
@@ -32,11 +32,19 @@
           <a href="#tecnologias">Tecnologias</a>
           <a href="#contato">Contato</a>
         </nav>
+
+        <button
+          type="button"
+          class="theme-toggle"
+          aria-label="Alterar tema"
+          aria-pressed="false"
+          onclick="toggleMode()"
+        ></button>
       </header>
 
       <!-- Apresentação principal -->
       <section id="profile" class="hero-section">
-        <img src="assets/avatar.png" alt="Foto de Ryan Santos" />
+        <img src="assets/avatar-light.png" alt="Foto de Ryan Santos" />
 
         <p class="eyebrow">Portfólio pessoal</p>
 
@@ -53,7 +61,7 @@
           estagiário ou desenvolvedor júnior.
         </p>
 
-        <!-- Ações principais para recrutadores -->
+        <!-- Links principais -->
         <div class="hero-actions">
           <a
             href="assets/Curriculo_Ryan_Santos.pdf"
@@ -83,23 +91,12 @@
             LinkedIn
           </a>
 
-          <a href="mailto:ryan.bulhoes@gmail.com">
+          <a href="#contato">
             <ion-icon name="mail-outline"></ion-icon>
             Contato
           </a>
         </div>
       </section>
-
-      <!-- Botão de tema claro/escuro -->
-      <div id="switch">
-        <button
-          type="button"
-          aria-label="Alterar tema"
-          aria-pressed="false"
-          onclick="toggleMode()"
-        ></button>
-        <span></span>
-      </div>
 
       <!-- Resumo rápido -->
       <section class="highlights-section" aria-label="Resumo profissional">
@@ -168,7 +165,7 @@
         </div>
       </section>
 
-      <!-- Resumo técnico por área -->
+      <!-- Resumo técnico -->
       <section class="technical-summary-section card-section">
         <h2>Resumo técnico</h2>
 
@@ -213,7 +210,7 @@
         </div>
       </section>
 
-      <!-- Tradução das habilidades para valor profissional -->
+      <!-- Como posso contribuir -->
       <section class="contribution-section card-section">
         <h2>Como posso contribuir</h2>
 
@@ -262,6 +259,7 @@
         </div>
 
         <div class="projects-grid">
+          <!-- Projeto 1 -->
           <article class="project-card featured-project">
             <div class="project-image">
               <img
@@ -288,6 +286,11 @@
                 <span>JWT</span>
               </div>
 
+              <p class="project-proof">
+                Demonstra autenticação, rotas protegidas, banco relacional,
+                filtros e organização de uma aplicação full-stack.
+              </p>
+
               <a
                 href="https://github.com/Ryluna19/PJobApplicationTracker"
                 target="_blank"
@@ -299,6 +302,7 @@
             </div>
           </article>
 
+          <!-- Projeto 2 -->
           <article class="project-card">
             <div class="project-image">
               <img
@@ -327,6 +331,11 @@
                 <span>JavaScript</span>
               </div>
 
+              <p class="project-proof">
+                Demonstra CRUD com MongoDB, uso de templates EJS, organização de
+                playlists e criação de player customizado.
+              </p>
+
               <a
                 href="https://github.com/Ryluna19/PMusicPlaylist"
                 target="_blank"
@@ -338,6 +347,7 @@
             </div>
           </article>
 
+          <!-- Projeto 3 -->
           <article class="project-card">
             <div class="project-image">
               <img
@@ -363,6 +373,11 @@
                 <span>MySQL</span>
               </div>
 
+              <p class="project-proof">
+                Demonstra uso de Python no back-end, sessões, autenticação,
+                banco MySQL e estruturação de aplicação web.
+              </p>
+
               <a
                 href="https://github.com/Ryluna19/PFlask-Library-System"
                 target="_blank"
@@ -374,6 +389,7 @@
             </div>
           </article>
 
+          <!-- Projeto 4 -->
           <article class="project-card">
             <div class="project-image">
               <img
@@ -399,6 +415,11 @@
                 <span>JavaScript</span>
               </div>
 
+              <p class="project-proof">
+                Demonstra manipulação do navegador, uso de geolocalização,
+                interface responsiva e lógica com JavaScript.
+              </p>
+
               <a
                 href="https://github.com/Ryluna19/PCafe_Proximos"
                 target="_blank"
@@ -412,7 +433,7 @@
         </div>
       </section>
 
-      <!-- Tecnologias organizadas por categoria -->
+      <!-- Tecnologias -->
       <section class="skills-section" id="tecnologias">
         <h2>Tecnologias</h2>
 
@@ -465,7 +486,7 @@
         </div>
       </section>
 
-      <!-- Contato final -->
+      <!-- Contato -->
       <section class="contact-section card-section" id="contato">
         <h2>Contato</h2>
 
@@ -475,10 +496,25 @@
           LinkedIn ou email.
         </p>
 
+        <div class="contact-info">
+          <span>Email</span>
+          <strong id="email-text">ryan.bulhoes@gmail.com</strong>
+        </div>
+
+        <p id="copy-feedback" class="copy-feedback" aria-live="polite"></p>
+
         <div class="contact-actions">
-          <a href="mailto:ryan.bulhoes@gmail.com" class="contact-button">
+          <button type="button" class="contact-button" onclick="copyEmail()">
+            <ion-icon name="copy-outline"></ion-icon>
+            Copiar email
+          </button>
+
+          <a
+            href="mailto:ryan.bulhoes@gmail.com?subject=Contato%20pelo%20portf%C3%B3lio"
+            class="contact-button secondary-contact"
+          >
             <ion-icon name="mail-outline"></ion-icon>
-            Enviar email
+            Abrir email
           </a>
 
           <a
@@ -493,13 +529,10 @@
         </div>
       </section>
 
-      <footer>
-        Página baseada no projeto DevLinks da Rocketseat, personalizada para
-        portfólio profissional.
-      </footer>
+      <footer>Desenvolvido por Ryan Santos • Portfólio pessoal</footer>
     </main>
 
-    <!-- Ícones usados nos botões e cards -->
+    <!-- Ícones -->
     <script
       type="module"
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
