@@ -24,13 +24,15 @@
 
 .light {
   --text-color: #111827;
-  --muted-color: #4b5563;
-  --bg-color: #f8fafc;
-  --card-color: rgba(0, 0, 0, 0.04);
-  --inner-card-color: rgba(0, 0, 0, 0.035);
-  --card-hover: rgba(0, 0, 0, 0.08);
-  --stroke-color: rgba(0, 0, 0, 0.12);
-  --highlight-color: rgba(255, 122, 0, 0.16);
+  --muted-color: #475569;
+  --bg-color: #f3f4f6;
+  --card-color: rgba(255, 255, 255, 0.78);
+  --inner-card-color: rgba(255, 255, 255, 0.65);
+  --card-hover: rgba(255, 255, 255, 0.95);
+  --stroke-color: rgba(15, 23, 42, 0.12);
+  --highlight-color: rgba(255, 122, 0, 0.14);
+  --accent-color: #e86f00;
+  --accent-hover: #ff7a00;
   --switch-bg-url: url(assets/sun.svg);
 }
 
@@ -185,7 +187,7 @@ section h2 {
   line-height: 1.7;
 }
 
-.card-section p + p {
+.card-section p+p {
   margin-top: 12px;
 }
 
@@ -459,12 +461,10 @@ section h2 {
   position: absolute;
   inset: 0;
 
-  background: linear-gradient(
-    120deg,
-    transparent,
-    rgba(255, 122, 0, 0.08),
-    transparent
-  );
+  background: linear-gradient(120deg,
+      transparent,
+      rgba(255, 122, 0, 0.08),
+      transparent);
 
   opacity: 0;
   pointer-events: none;
