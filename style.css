@@ -400,6 +400,49 @@ section h2 {
   font-size: 1.4rem;
   margin-bottom: 10px;
 }
+/* ================================ Technical Summary ================================ */
+
+.technical-summary-section {
+  margin-bottom: 28px;
+}
+
+.technical-summary-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px;
+}
+
+.technical-summary-card {
+  padding: 18px;
+  background: var(--inner-card-color);
+  border: 1px solid var(--stroke-color);
+  border-radius: 16px;
+  transition: 0.2s ease;
+}
+
+.technical-summary-card:hover {
+  border-color: rgba(255, 122, 0, 0.45);
+  background: var(--card-hover);
+  transform: translateY(-3px);
+}
+
+.technical-summary-card ion-icon {
+  display: block;
+  color: var(--accent-color);
+  font-size: 1.45rem;
+  margin-bottom: 10px;
+}
+
+.technical-summary-card h3 {
+  font-size: 1rem;
+  margin-bottom: 8px;
+}
+
+.technical-summary-card p {
+  color: var(--muted-color);
+  font-size: 0.92rem;
+  line-height: 1.65;
+}
 
 /* ================================
    Projects
@@ -804,6 +847,7 @@ footer {
   .goal-grid,
   .technical-grid,
   .contribution-grid,
+  .technical-summary-grid,
   .projects-grid,
   .skills-groups {
     grid-template-columns: 1fr;
