@@ -2,25 +2,28 @@
 <html lang="pt-BR">
 
 <head>
-  <!-- Configuração básica da página -->
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta
+    name="description"
+    content="Portfólio de Ryan Santos, desenvolvedor web full-stack focado em React, Node.js, PostgreSQL e TypeScript."
+  />
 
-  <title>Ryan Santos | Desenvolvedor Web</title>
+  <title>Ryan Santos | Desenvolvedor Full-Stack</title>
 
-  <!-- Fonte principal -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
 
-  <!-- CSS principal -->
   <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
   <main id="container">
-    <!-- Header / Navegação principal -->
     <header class="site-header">
       <a href="#profile" class="logo">Ryan Santos</a>
 
@@ -31,11 +34,15 @@
         <a href="#contato">Contato</a>
       </nav>
 
-      <button type="button" class="theme-toggle" aria-label="Alterar tema" aria-pressed="false"
-        onclick="toggleMode()"></button>
+      <button
+        type="button"
+        class="theme-toggle"
+        aria-label="Alterar tema"
+        aria-pressed="false"
+        onclick="toggleMode()"
+      ></button>
     </header>
 
-    <!-- Apresentação principal -->
     <section id="profile" class="hero-section">
       <img src="assets/avatar-light.png" alt="Foto de Ryan Santos" />
 
@@ -55,17 +62,30 @@
       </p>
 
       <div class="hero-actions">
-        <a href="assets/Curriculo_Ryan_Santos.pdf" target="_blank" rel="noopener noreferrer" class="primary-action">
+        <a
+          href="assets/Curriculo_Ryan_Santos.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="primary-action"
+        >
           <ion-icon name="document-text-outline"></ion-icon>
           Currículo
         </a>
 
-        <a href="https://github.com/Ryluna19" target="_blank" rel="noopener noreferrer">
+        <a
+          href="https://github.com/Ryluna19"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <ion-icon name="logo-github"></ion-icon>
           GitHub
         </a>
 
-        <a href="https://www.linkedin.com/in/ryan-bulhoes-santos-560b25225/" target="_blank" rel="noopener noreferrer">
+        <a
+          href="https://www.linkedin.com/in/ryan-bulhoes-santos-560b25225/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <ion-icon name="logo-linkedin"></ion-icon>
           LinkedIn
         </a>
@@ -77,7 +97,6 @@
       </div>
     </section>
 
-    <!-- Resumo rápido -->
     <section class="highlights-section" aria-label="Resumo profissional">
       <div class="highlight-card">
         <span>Formação</span>
@@ -95,7 +114,6 @@
       </div>
     </section>
 
-    <!-- Sobre mim -->
     <section class="about-section card-section" id="sobre">
       <h2>Sobre mim</h2>
 
@@ -119,54 +137,6 @@
       </p>
     </section>
 
-
-
-    <!-- Resumo técnico -->
-    <section class="technical-summary-section card-section">
-      <h2>Resumo técnico</h2>
-
-      <div class="technical-grid">
-        <div class="technical-card">
-          <ion-icon name="code-slash-outline"></ion-icon>
-          <h3>Front-end</h3>
-          <p>
-            Criação de interfaces responsivas com HTML, CSS, JavaScript e
-            React, buscando clareza visual, organização e boa experiência de
-            uso.
-          </p>
-        </div>
-
-        <div class="technical-card">
-          <ion-icon name="server-outline"></ion-icon>
-          <h3>Back-end</h3>
-          <p>
-            Desenvolvimento de APIs e aplicações com Node.js, Express, Python
-            e Flask, incluindo rotas, regras de negócio e integração com banco
-            de dados.
-          </p>
-        </div>
-
-        <div class="technical-card">
-          <ion-icon name="file-tray-stacked-outline"></ion-icon>
-          <h3>Banco de dados</h3>
-          <p>
-            Uso de PostgreSQL, MySQL e MongoDB em projetos com CRUD,
-            autenticação, persistência de dados e organização de informações.
-          </p>
-        </div>
-
-        <div class="technical-card">
-          <ion-icon name="git-branch-outline"></ion-icon>
-          <h3>Ferramentas</h3>
-          <p>
-            Organização de projetos com Git, GitHub, variáveis de ambiente,
-            documentação, versionamento e estruturação de aplicações.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Projetos em destaque -->
     <section class="projects-section" id="projetos">
       <div class="section-header">
         <p class="eyebrow">Portfólio</p>
@@ -182,8 +152,11 @@
       <div class="projects-grid">
         <article class="project-card featured-project">
           <div class="project-image">
-            <img src="assets/farofa-do-areias.png" alt="Dashboard administrativo do projeto Farofa do Areias"
-              loading="lazy" />
+            <img
+              src="assets/farofa-do-areias.png"
+              alt="Dashboard administrativo do projeto Farofa do Areias"
+              loading="lazy"
+            />
           </div>
 
           <div class="project-content">
@@ -209,8 +182,12 @@
               cálculo de preços, banco relacional, testes automatizados e CI.
             </p>
 
-            <a href="https://github.com/Ryluna19/PFarofa-do-Areias" target="_blank" rel="noopener noreferrer"
-              class="project-link">
+            <a
+              href="https://github.com/Ryluna19/PFarofa-do-Areias"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="project-link"
+            >
               Ver código
             </a>
           </div>
@@ -218,8 +195,11 @@
 
         <article class="project-card">
           <div class="project-image">
-            <img src="assets/projects/job-tracker.png" alt="Preview do projeto Job Application Tracker"
-              loading="lazy" />
+            <img
+              src="assets/projects/job-tracker.png"
+              alt="Preview do projeto Job Application Tracker"
+              loading="lazy"
+            />
           </div>
 
           <div class="project-content">
@@ -245,8 +225,12 @@
               testes de API e integração contínua.
             </p>
 
-            <a href="https://github.com/Ryluna19/PJobApplicationTracker" target="_blank" rel="noopener noreferrer"
-              class="project-link">
+            <a
+              href="https://github.com/Ryluna19/PJobApplicationTracker"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="project-link"
+            >
               Ver código
             </a>
           </div>
@@ -254,7 +238,11 @@
 
         <article class="project-card">
           <div class="project-image">
-            <img src="assets/projects/cafes-proximos.png" alt="Preview do projeto Café Curator" loading="lazy" />
+            <img
+              src="assets/projects/cafes-proximos.png"
+              alt="Preview do projeto Café Curator"
+              loading="lazy"
+            />
           </div>
 
           <div class="project-content">
@@ -280,8 +268,12 @@
               navegador, filtros e interface responsiva.
             </p>
 
-            <a href="https://github.com/Ryluna19/PCafe_Proximos" target="_blank" rel="noopener noreferrer"
-              class="project-link">
+            <a
+              href="https://github.com/Ryluna19/PCafe_Proximos"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="project-link"
+            >
               Ver código
             </a>
           </div>
@@ -289,8 +281,11 @@
 
         <article class="project-card">
           <div class="project-image">
-            <img src="assets/projects/music-playlist.png" alt="Preview do projeto Music Playlist Manager"
-              loading="lazy" />
+            <img
+              src="assets/projects/music-playlist.png"
+              alt="Preview do projeto Music Playlist Manager"
+              loading="lazy"
+            />
           </div>
 
           <div class="project-content">
@@ -316,8 +311,12 @@
               funcionalidades de reprodução de música.
             </p>
 
-            <a href="https://github.com/Ryluna19/PMusicPlaylist" target="_blank" rel="noopener noreferrer"
-              class="project-link">
+            <a
+              href="https://github.com/Ryluna19/PMusicPlaylist"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="project-link"
+            >
               Ver código
             </a>
           </div>
@@ -325,7 +324,11 @@
 
         <article class="project-card">
           <div class="project-image">
-            <img src="assets/projects/flask-library.png" alt="Preview do projeto Flask Library System" loading="lazy" />
+            <img
+              src="assets/projects/flask-library.png"
+              alt="Preview do projeto Flask Library System"
+              loading="lazy"
+            />
           </div>
 
           <div class="project-content">
@@ -351,8 +354,12 @@
               integração com banco de dados.
             </p>
 
-            <a href="https://github.com/Ryluna19/PFlask-Library-System" target="_blank" rel="noopener noreferrer"
-              class="project-link">
+            <a
+              href="https://github.com/Ryluna19/PFlask-Library-System"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="project-link"
+            >
               Ver código
             </a>
           </div>
@@ -360,9 +367,63 @@
       </div>
     </section>
 
-    <!-- Tecnologias -->
+    <section id="resumo-tecnico" class="technical-summary-section">
+      <div class="section-header">
+        <span>Competências</span>
+        <h2>Resumo técnico</h2>
+        <p>
+          Tecnologias e práticas aplicadas nos meus projetos mais recentes.
+        </p>
+      </div>
+
+      <div class="technical-summary-grid">
+        <article class="technical-summary-card">
+          <ion-icon name="code-slash-outline"></ion-icon>
+          <h3>Front-end</h3>
+          <p>
+            Interfaces responsivas com HTML, CSS, JavaScript, TypeScript e React,
+            com foco em clareza visual, componentes reutilizáveis e boa experiência
+            de uso.
+          </p>
+        </article>
+
+        <article class="technical-summary-card">
+          <ion-icon name="server-outline"></ion-icon>
+          <h3>Back-end</h3>
+          <p>
+            APIs REST com Node.js e Express, incluindo autenticação JWT, rotas
+            protegidas, validações, regras de negócio e organização de código.
+          </p>
+        </article>
+
+        <article class="technical-summary-card">
+          <ion-icon name="database-outline"></ion-icon>
+          <h3>Banco de dados</h3>
+          <p>
+            Modelagem e persistência com PostgreSQL, MySQL e MongoDB, trabalhando
+            com CRUD, relacionamentos, consultas e dados de aplicações web.
+          </p>
+        </article>
+
+        <article class="technical-summary-card">
+          <ion-icon name="shield-checkmark-outline"></ion-icon>
+          <h3>Qualidade e fluxo</h3>
+          <p>
+            Git, GitHub, variáveis de ambiente, documentação, testes automatizados
+            com Vitest e integração contínua com GitHub Actions.
+          </p>
+        </article>
+      </div>
+    </section>
+
     <section class="skills-section" id="tecnologias">
-      <h2>Tecnologias</h2>
+      <div class="section-header">
+        <span>Stack principal</span>
+        <h2>Tecnologias</h2>
+        <p>
+          Ferramentas aplicadas nos projetos e estudos mais recentes.
+        </p>
+      </div>
 
       <div class="skills-groups">
         <div class="skills-group">
@@ -385,6 +446,7 @@
             <span>Express</span>
             <span>Python</span>
             <span>Flask</span>
+            <span>PHP</span>
           </div>
         </div>
 
@@ -400,20 +462,19 @@
         </div>
 
         <div class="skills-group">
-          <h3>Ferramentas</h3>
+          <h3>Ferramentas e qualidade</h3>
 
           <div class="skills">
             <span>Git</span>
             <span>GitHub</span>
-            <span>VS Code</span>
-            <span>Power BI</span>
-            <span>Excel</span>
+            <span>Vitest</span>
+            <span>GitHub Actions</span>
+            <span>Postman</span>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Contato -->
     <section class="contact-section card-section" id="contato">
       <h2>Contato</h2>
 
@@ -436,14 +497,20 @@
           Copiar email
         </button>
 
-        <a href="mailto:ryan.bulhoes@gmail.com?subject=Contato%20pelo%20portf%C3%B3lio"
-          class="contact-button secondary-contact">
+        <a
+          href="mailto:ryan.bulhoes@gmail.com?subject=Contato%20pelo%20portf%C3%B3lio"
+          class="contact-button secondary-contact"
+        >
           <ion-icon name="mail-outline"></ion-icon>
           Abrir email
         </a>
 
-        <a href="https://www.linkedin.com/in/ryan-bulhoes-santos-560b25225/" target="_blank" rel="noopener noreferrer"
-          class="contact-button secondary-contact">
+        <a
+          href="https://www.linkedin.com/in/ryan-bulhoes-santos-560b25225/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="contact-button secondary-contact"
+        >
           <ion-icon name="logo-linkedin"></ion-icon>
           LinkedIn
         </a>
@@ -453,12 +520,16 @@
     <footer>Desenvolvido por Ryan Santos • Portfólio pessoal</footer>
   </main>
 
-  <!-- Ícones -->
-  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script
+    type="module"
+    src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+  ></script>
 
-  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <script
+    nomodule
+    src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+  ></script>
 
-  <!-- JavaScript principal -->
   <script src="Script.js"></script>
 </body>
 
