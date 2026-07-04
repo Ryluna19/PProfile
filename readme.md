@@ -1,8 +1,8 @@
 # Ryan Santos | Portfólio Pessoal
 
-Portfólio pessoal desenvolvido para apresentar meus principais projetos, tecnologias, foco profissional e formas de contato.
+[![Acessar portfólio](https://img.shields.io/badge/Acessar_portf%C3%B3lio-FF7A00?style=for-the-badge&logo=githubpages&logoColor=white)](https://ryluna19.github.io/PProfile/)
 
-🔗 [Acessar portfólio](https://ryluna19.github.io/PProfile/)
+Portfólio pessoal desenvolvido para apresentar meus principais projetos, tecnologias, foco profissional e formas de contato.
 
 [GitHub](https://github.com/Ryluna19) • [LinkedIn](https://www.linkedin.com/in/ryan-bulhoes-santos-560b25225/)
 
