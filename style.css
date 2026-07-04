@@ -476,7 +476,16 @@ section h2 {
 }
 
 .featured-project {
+  grid-column: 1 / -1;
   border-color: rgba(255, 122, 0, 0.45);
+}
+
+.featured-project .project-content {
+  padding: 22px;
+}
+
+.featured-project h3 {
+  font-size: 1.28rem;
 }
 
 .project-image {
